@@ -1,4 +1,4 @@
-# (C) KennedyProject github.com/KennedyProject
+# Copyright (C) 2021 OashuMusicProject
 
 from time import time
 from datetime import datetime
@@ -35,9 +35,9 @@ async def _human_time_duration(seconds):
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>👋 **Hello {message.from_user.mention}**</b> ❗
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Is a bot designed to play music in your voice chat groups!**
-**To see some commands for using this bot, click » /help**""",
+        f"""<b>👋 **Holla {message.from_user.mention}**</b> ✨
+**I'm [{BOT_NAME}](https://t.me/{BOT_USERNAME}) Bot which created and can be used to play music in your Telegram group voice chat!**
+**💡 To know the commands and how to use this bot, please click » /help**""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
@@ -45,7 +45,7 @@ async def cbstart(_, query: CallbackQuery):
                         "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "ʀᴇᴘᴏ​​", url="https://github.com/KennedyProject/KennedyXMusic"
+                        "ʀᴇᴘᴏ​​", url="https://github.com/yogaadtma/OashuMusic"
                     ),
                     InlineKeyboardButton(
                         "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{GROUP_SUPPORT}")
@@ -89,7 +89,7 @@ __{bn} licensed under the GNU General Public License v.3.0__
             [
                 [
                     InlineKeyboardButton(
-                        "sᴏᴜʀᴄᴇ​​", url="https://github.com/KennedyProject/KennedyXMusic"
+                        "sᴏᴜʀᴄᴇ​​", url="https://github.com/yogaadtma/OashuMusic"
                     ),
                     InlineKeyboardButton(
                         "ʙᴀᴄᴋ​", callback_data="cbadvanced"
@@ -126,7 +126,7 @@ async def cbhelp(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        "📒 Fun Cmd", callback_data="cbfun"
                     )
                 ],
                 [
@@ -180,15 +180,15 @@ async def cbadvanced(_, query: CallbackQuery):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await query.edit_message_text(
-        f"""**{alv} Holla I'm [{bn}](https://t.me/{BOT_USERNAME})**
+        f"""**{alv} ✨Holla I'm [{bn}](https://t.me/{BOT_USERNAME})**
 
-{alv} **I'm Working Properly**
+{alv} **⚡I'm Working Properly**
 
-{alv} **Bot : 6.0 LATEST**
+{alv} **⚡Bot : 1.0 LATEST**
 
-{alv} **My Master : [{OWNER_NAME}](https://t.me/{OWNER_NAME})**
+{alv} **⚡Owners : [{OWNER_NAME}](https://t.me/{OWNER_NAME})**
 
-{alv} **Service Uptime : `{uptime}`**
+{alv} **⚡Service Uptime : `{uptime}`**
 
 **Thanks For Using Me ♥️**""",
         reply_markup=InlineKeyboardMarkup(

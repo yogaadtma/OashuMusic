@@ -1,7 +1,4 @@
-# © KennedyProject 2021
-# Sena (@xgothboi)
-# Kalo ngedit jangan hapus credit ya meki
-# YAHAHA WAHYOE
+# # Copyright (C) 2021 OashuMusicProject
 
 from os import path
 from pyrogram import Client, filters
@@ -51,15 +48,15 @@ async def alive(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_photo(
         photo=f"{BOT_IMG}",
-        caption=f"""**{alv} Holla I'm [{bn}](https://t.me/{BOT_USERNAME})**
+        caption=f"""**{alv} ✨Holla I'm [{bn}](https://t.me/{BOT_USERNAME})**
 
-{alv} **I'm Working Properly**
+{alv} **⚡I'm Working Properly**
 
-{alv} **Bot : 6.0 LATEST**
+{alv} **⚡Bot : 1.0 LATEST**
 
-{alv} **My Master : [Tuhan](https://t.me/{OWNER_NAME})**
+{alv} **⚡Owners : [Tuhan](https://t.me/{OWNER_NAME})**
 
-{alv} **Service Uptime : `{uptime}`**
+{alv} **⚡Service Uptime : `{uptime}`**
 
 **Thanks For Using Me ❤️**""",
         reply_markup=InlineKeyboardMarkup(

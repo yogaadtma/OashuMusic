@@ -1,3 +1,4 @@
+# Copyright (C) 2021 OashuMusicProject
 # 🍀 © @tofik_dn
 # ⚠️ Do not remove credits
 

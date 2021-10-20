@@ -1,5 +1,4 @@
-# Made by: https://github.com/FeriEXP
-# Special credits to https://github.com/TheHamkerCat 
+# Copyright (C) 2021 OashuMusicProject
 
 from os import path
 import aiohttp

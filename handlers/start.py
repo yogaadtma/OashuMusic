@@ -32,9 +32,9 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋 **Hello {message.from_user.mention}**</b> ❗
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Is a bot designed to play music in your voice chat groups!**
-**To see some commands for using this bot, click » /help**""",
+        f"""<b>👋 **Holla {message.from_user.mention}**</b> ✨
+**I'm [{BOT_NAME}](https://t.me/{BOT_USERNAME}) Bot which created and can be used to play music in your Telegram group voice chat!**
+**💡 To know the commands and how to use this bot, please click » /help**""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
@@ -42,7 +42,7 @@ async def start_(client: Client, message: Message):
                         "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "ʀᴇᴘᴏ​​", url="https://github.com/KennedyProject/KennedyXMusic"
+                        "ʀᴇᴘᴏ​​", url="https://github.com/yogaadtma/OashuMusic"
                     ),
                     InlineKeyboardButton(
                         "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{GROUP_SUPPORT}")
@@ -65,7 +65,7 @@ async def start(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     delta_ping = time() - start
     await message.reply_text(
-        f"""<b>👋 **Hello {message.from_user.mention()}** ❗</b>
+        f"""<b>👋 **Holla {message.from_user.mention()}** ✨</b>
 
 ✅ **I'm active and ready to play music!
 • Start time: `{START_TIME_ISO}`
@@ -85,7 +85,7 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋 **Hello** {message.from_user.mention()}</b>
+        f"""<b>👋 **Holla** {message.from_user.mention()}</b>
 **Please press the button below to read the explanation and see the list of available commands !**
 
 💡 Bot by @{OWNER_NAME}""",
@@ -103,7 +103,7 @@ async def help(client: Client, message: Message):
 @Client.on_message(command("help") & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋 **Hello {message.from_user.mention} welcome to the help menu !**</b>
+        f"""<b>👋 **Holla {message.from_user.mention} welcome to the help menu !**</b>
 
 **__In this menu you can open several available command menus, in each command menu there is also a brief explanation of each command__**
 

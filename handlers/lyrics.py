@@ -1,5 +1,4 @@
-# Modules imported by @xgothboi (https://github.com/KennedyProject/KennedyXMusic)
-# Don't remove this credits
+# Copyright (C) 2021 OashuMusicProject
 
 from os import path
 from pyrogram.types import Message

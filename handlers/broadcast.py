@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By KennedyProject
+# Copyright (C) 2021 OashuMusicProject
 
 
 import asyncio

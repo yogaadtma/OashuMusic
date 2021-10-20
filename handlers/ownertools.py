@@ -197,11 +197,6 @@ async def delvar(client: Client, message: Message, app_):
     del heroku_var[_var]
 
 
-# Modul From https://github.com/DevsExpo/Xtra-Plugins/blob/main/usage.py
-# Port By https://github.com/FeriEXP | https://t.me/xflicks
-# Usage Heroku Dyno
-
-
 heroku_client = None
 if HEROKU_API_KEY:
     heroku_client = heroku3.from_key(HEROKU_API_KEY)
